@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio de Wanderlei</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-light: #f1f5f9;
+      --bg-dark: #0f172a;
+      --text-light: #f8fafc;
+      --text-dark: #1e293b;
+      --primary: #3b82f6;
+      --card-bg-light: #fff;
+      --card-bg-dark: #1e293b;
+    }
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      padding: 2rem;
+      transition: all 0.3s ease;
+    }
+    .dark-mode {
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+    }
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+      animation: fadeIn 1s ease-out;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: var(--primary);
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 1rem 0;
+    }
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      margin-bottom: 3rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 1rem;
+      background: var(--card-bg-light);
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease, background 0.3s ease;
+    }
+    .dark-mode li {
+      background: var(--card-bg-dark);
+    }
+    li:hover {
+      transform: translateY(-4px);
+    }
+    a {
+      color: var(--primary);
+      font-weight: bold;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #64748b;
+    }
+    .toggle-btn {
+      display: block;
+      margin: auto;
+      background: var(--primary);
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 2rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.8rem; }
+      h2 { font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>👨‍💻 Portfólio de Wanderlei</h1>
+    <p>Desenvolvedor Python | Dados, IA, Web e Automação</p>
+    <nav>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button class="toggle-btn" onclick="toggleMode()">Alternar Modo Escuro</button>
+  </header>
+
+  <section id="projetos">
+    <h2>🚀 Projetos em Destaque</h2>
+    <ul>
+      <li>
+        <a href="https://github.com/wssjlle/analise_cancelamentos" target="_blank">📊 Análise de Cancelamentos</a><br/>
+        <small>Análise exploratória de dados com Pandas, Seaborn e insights sobre churn.</small>
+      </li>
+      <li>
+        <a href="https://github.com/wssjlle/automacao_cadastro" target="_blank">🤖 Automação de Cadastro com PyAutoGUI</a><br/>
+        <small>Script que automatiza o login e preenchimento de formulários usando Python.</small>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contato">
+    <h2>📬 Contato</h2>
+    <p><strong>Email:</strong> wssjlle@gmail.com</p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/wssjlle" target="_blank">github.com/wssjlle</a></p>
+  </section>
+
+  <footer>
+    Desenvolvido por Wanderlei • GitHub Pages © 2025
+  </footer>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+
+</body>
+</html>
