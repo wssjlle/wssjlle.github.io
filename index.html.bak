@@ -131,11 +131,11 @@
     <h2>🚀 Projetos em Destaque</h2>
     <ul>
       <li>
-        <a href="https://github.com/wssjlle/analise_cancelamentos" target="_blank">📊 Análise de Cancelamentos</a><br/>
+        <a href="https://wssjlle.github.io/analise_cancelamentos" target="_blank">📊 Análise de Cancelamentos</a><br/>
         <small>Análise exploratória de dados com Pandas, Seaborn e insights sobre churn.</small>
       </li>
       <li>
-        <a href="https://github.com/wssjlle/automacao_cadastro" target="_blank">🤖 Automação de Cadastro com PyAutoGUI</a><br/>
+        <a href="https://wssjlle.github.io/automacao_cadastro" target="_blank">🤖 Automação de Cadastro com PyAutoGUI</a><br/>
         <small>Script que automatiza o login e preenchimento de formulários usando Python.</small>
       </li>
     </ul>
@@ -144,7 +144,7 @@
   <section id="contato">
     <h2>📬 Contato</h2>
     <p><strong>Email:</strong> wssjlle@gmail.com</p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/wssjlle" target="_blank">github.com/wssjlle</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/wanderlei-silva-dos-santos" target="_blank">LinkedIn - Wanderlei Silva dos Santos</a></p>
   </section>
 
   <footer>
